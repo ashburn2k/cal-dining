@@ -1,3 +1,7 @@
+import sys
+sys.path.append('/usr/lib/python2.6/dist-packages/')
+import lxml
+
 from bs4 import BeautifulSoup
 import requests
 from sqlalchemy import and_
