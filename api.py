@@ -4,8 +4,8 @@ from flask.ext.sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.config.from_object('config')
-api = Api(app)
 db = SQLAlchemy(app)
+api = Api(app)
 
 from models import Menu, Food
 from util import get_recent_menu_date, menu_to_json
